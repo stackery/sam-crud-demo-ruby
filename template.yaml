@@ -56,8 +56,8 @@ Resources:
         - Stackery Stack ${StackeryStackTagName} Environment ${StackeryEnvironmentTagName} Function ${ResourceName}
         - ResourceName: getUser
       CodeUri: src/getUser
-      Handler: index.handler
-      Runtime: nodejs10.x
+      Handler: function.handler
+      Runtime: ruby2.5
       MemorySize: 3008
       Timeout: 30
       Tracing: Active
@@ -86,8 +86,8 @@ Resources:
         - Stackery Stack ${StackeryStackTagName} Environment ${StackeryEnvironmentTagName} Function ${ResourceName}
         - ResourceName: updateUser
       CodeUri: src/updateUser
-      Handler: index.handler
-      Runtime: nodejs10.x
+      Handler: function.handler
+      Runtime: ruby2.5
       MemorySize: 3008
       Timeout: 30
       Tracing: Active
@@ -116,8 +116,8 @@ Resources:
         - Stackery Stack ${StackeryStackTagName} Environment ${StackeryEnvironmentTagName} Function ${ResourceName}
         - ResourceName: createUser
       CodeUri: src/createUser
-      Handler: index.handler
-      Runtime: nodejs10.x
+      Handler: function.handler
+      Runtime: ruby2.5
       MemorySize: 3008
       Timeout: 30
       Tracing: Active
@@ -146,8 +146,8 @@ Resources:
         - Stackery Stack ${StackeryStackTagName} Environment ${StackeryEnvironmentTagName} Function ${ResourceName}
         - ResourceName: deleteUser
       CodeUri: src/deleteUser
-      Handler: index.handler
-      Runtime: nodejs10.x
+      Handler: function.handler
+      Runtime: ruby2.5
       MemorySize: 3008
       Timeout: 30
       Tracing: Active
@@ -176,8 +176,8 @@ Resources:
         - Stackery Stack ${StackeryStackTagName} Environment ${StackeryEnvironmentTagName} Function ${ResourceName}
         - ResourceName: listUsers
       CodeUri: src/listUsers
-      Handler: index.handler
-      Runtime: nodejs10.x
+      Handler: function.handler
+      Runtime: ruby2.5
       MemorySize: 3008
       Timeout: 30
       Tracing: Active
