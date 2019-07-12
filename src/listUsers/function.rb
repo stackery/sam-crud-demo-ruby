@@ -19,8 +19,8 @@ def handler(event:, context:)
     end
 
   rescue  Aws::DynamoDB::Errors::ServiceError => error # stop execution if dynamodb is not available
-    puts "Error fetching table #{table_name}. Make sure this function is running in the same environment as the table."
-    puts "#{error.message}"
+    puts "Error writing to table #{table_name}:"
+    puts error.message
   end
 
   # Return a 200 response if no errors
