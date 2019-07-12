@@ -15,7 +15,7 @@ def handler(event:, context:)
       first_name = item["FirstName"]
       last_name = item["LastName"]
       favorite_color = item["FavoriteColor"]
-      puts "User #{item_id}: #{first_name} #{last_name}, #{favorite_color}"
+      puts "User #{item_id}: #{first_name} #{last_name}, #{favorite_color}\n"
     end
 
   rescue  Aws::DynamoDB::Errors::ServiceError => error # stop execution if dynamodb is not available
