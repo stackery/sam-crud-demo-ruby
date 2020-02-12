@@ -1,6 +1,6 @@
-# Stackery CRUD Demo - NodeJS 8.10
+# Stackery CRUD Demo - Ruby 2.5
 
-This is a sample template for a serverless AWS Lambda application, written in JavaScript.
+This is a sample template for a serverless AWS Lambda application, written in Ruby.
 
 The application implements a CRUD interface in front of an AWS DynamoDB table that
 manages a simple user record.  An API Gateway distributes requests to the various
@@ -17,25 +17,25 @@ Here is an overview of the files:
 ├── README.md                          <-- This README file
 ├── src                                <-- Source code dir for all AWS Lambda functions
 │   ├── createUser                     <-- Source code dir for createUser function
-│       ├── package.json               <-- Build dependencies for createUser
+│       ├── Gemfile                    <-- Build dependencies for createUser
 │       ├── .stackery-config.yaml      <-- Default CLI parameters for this directory
-│       └── index.js                   <-- Lambda createUser function code
+│       └── function.rb                <-- Lambda createUser function code
 │   ├── getUser                        <-- Source code dir for getUser function
-│       ├── package.json               <-- Build dependencies for getUser
+│       ├── Gemfile                    <-- Build dependencies for getUser
 │       ├── .stackery-config.yaml      <-- Default CLI parameters for this directory
-│       └── index.js                   <-- Lambda getUser function code
+│       └── function.rb                <-- Lambda getUser function code
 │   ├── updateUser                     <-- Source code dir for updateUser function
-│       ├── package.json               <-- Build dependencies for updateUser
+│       ├── Gemfile                    <-- Build dependencies for updateUser
 │       ├── .stackery-config.yaml      <-- Default CLI parameters for this directory
-│       └── index.js                   <-- Lambda updateUser function code
+│       └── function.rb                <-- Lambda updateUser function code
 │   ├── deleteUser                     <-- Source code dir for deleteUser function
-│       ├── package.json               <-- Build dependencies for deleteUser
+│       ├── Gemfile                    <-- Build dependencies for deleteUser
 │       ├── .stackery-config.yaml      <-- Default CLI parameters for this directory
-│       └── index.js                   <-- Lambda deleteUser function code
+│       └── function.rb                <-- Lambda deleteUser function code
 │   └── listUsers                      <-- Source code dir for listUsers function
-│       ├── package.json               <-- Build dependencies for listUsers
+│       ├── Gemfile                    <-- Build dependencies for listUsers
 │       ├── .stackery-config.yaml      <-- Default CLI parameters for this directory
-│       └── index.js                   <-- Lambda listUsers function code
+│       └── function.rb                <-- Lambda listUsers function code
 ├── .stackery-config.yaml              <-- Default CLI parameters for root directory
 └── template.yaml                      <-- SAM infrastructure-as-code template
 ```
